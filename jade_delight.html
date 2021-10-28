@@ -50,7 +50,7 @@ function displayUpdatedPrice(quantity, item) {
 function validateLastName() {
 	var lastName = document.getElementsByName('lname')[0].value;
 	if (lastName == "") {
-		document.getElementById("lnerror").innerHTML = "<span style=\"color:red\">" + "*Please fill in your last name." + "</span>";
+		document.getElementById("lnerror").innerHTML = "<span style=\"color:black\">" + "*Please fill in your last name." + "</span>";
 		return false;
 	}
 	document.getElementById("lnerror").innerHTML = null;
@@ -59,11 +59,11 @@ function validateLastName() {
 function validatePhoneNumber() {
 	var phoneNumber = document.getElementsByName("phone")[0].value;
 	if (phoneNumber == "") {
-		document.getElementById("pnerror").innerHTML = "<span style=\"color:red\">" + "*Please fill in your phone number." + "</span>";
+		document.getElementById("pnerror").innerHTML = "<span style=\"color:black\">" + "*Please fill in your phone number." + "</span>";
 		return false;
 	}
 	if (phoneNumber.length != 10) {
-		document.getElementById("pnerror").innerHTML = "<span style=\"color:red\">" + "*Please fill in a correct phone number, no dashes." + "</span>";
+		document.getElementById("pnerror").innerHTML = "<span style=\"color:black\">" + "*Please fill in a correct phone number, no dashes." + "</span>";
 		return false;
 	}
 	document.getElementById("pnerror").innerHTML = null;
@@ -72,7 +72,7 @@ function validatePhoneNumber() {
 function validateStreet() {
 	var street = document.getElementsByName('street')[0].value;
 	if (street == "") {
-		document.getElementById("serror").innerHTML = "<span style=\"color:red\">" + "*Please enter a street address for delivery." + "</span>";
+		document.getElementById("serror").innerHTML = "<span style=\"color:black\">" + "*Please enter a street address for delivery." + "</span>";
 		return false;
 	}
 	document.getElementById("serror").innerHTML = null;
@@ -81,7 +81,7 @@ function validateStreet() {
 function validateCity() {
 	var city = document.getElementsByName('city')[0].value;
 	if (city == "") {
-		document.getElementById("cerror").innerHTML = "<span style =\"color:red\">" + "*Please enter a city for delivery." + "</span>";
+		document.getElementById("cerror").innerHTML = "<span style =\"color:black\">" + "*Please enter a city for delivery." + "</span>";
 		return false;
 	}
 	document.getElementById("cerror").innerHTML = null;
